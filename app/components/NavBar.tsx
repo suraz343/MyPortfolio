@@ -32,7 +32,7 @@ export default function NavBar() {
       {/* Mobile Menu */}
       {isOpen && (
         <div className="md:hidden bg-gray-800 py-4">
-          <a href="#resume" className="block text-center py-2 hover:text-blue-400 transition">Resume</a>
+          <a href="/resume.pdf" className="block text-center py-2 hover:text-blue-400 transition">Resume</a>
           <a href="#projects" className="block text-center py-2 hover:text-blue-400 transition">Projects</a>
           <a href="#about" className="block text-center py-2 hover:text-blue-400 transition">About</a>
           <a href="#send message" className="block text-center py-2 hover:text-blue-400 transition">Send Message</a>

@@ -18,9 +18,9 @@ export default function HeroSection() {
 
   return (
     <div className="flex flex-col md:flex-row items-center justify-center h-screen px-10 bg-gray-900 text-white">
-      {/* Left Section - Text Content */}
+     
       <div className="text-center md:text-left max-w-2xl">
-        {/* Centered "HEY DEVELOPERS 👋" */}
+        
         <h2 className="text-5xl md:text-6xl font-extrabold text-blue-400 animate-fadeIn">
           HEY DEVELOPERS 👋
         </h2>
@@ -35,7 +35,7 @@ export default function HeroSection() {
           Suraj <br /> Prajapati
         </h1>
 
-        {/* Introduction Paragraph with Typewriter Effect */}
+        
         <div className="bg-gray-800 p-4 rounded-lg mt-6 max-w-lg mx-auto md:mx-0">
           <p className="text-xl md:text-2xl font-medium text-gray-300 transition-all duration-700">
             {displayText} <span className="animate-pulse">|</span>
@@ -45,7 +45,7 @@ export default function HeroSection() {
 
       
       <div className="mt-12 md:mt-0 md:ml-16">
-        <div className="relative w-60 h-60 md:w-80 md:h-80 border-4 border-blue-400 rounded-2xl shadow-lg overflow-hidden">
+        <div className="relative w-60 h-60 md:w-80 md:h-80 border-4 border-blue-400 rounded-2xl shadow-lg overflow-hidden bg-gray-900">
           <img 
             src="/photo.png" 
             alt="Suraj Prajapati" 
