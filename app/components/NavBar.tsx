@@ -6,7 +6,7 @@ export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="bg-gray-900 text-white fixed top-0 left-0 w-full shadow-md z-50">
+    <nav className="bg-gray-900 text-white fixed top-0 left-0 w-full">
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
         <a href="#" className="text-2xl font-bold text-blue-400">Suraz343</a>
@@ -16,8 +16,8 @@ export default function NavBar() {
           <a href="#projects" className="hover:text-blue-400 font-semibold transition">Projects</a>
           <a href="#about" className="hover:text-blue-400 font-semibold transition">About</a>
           <a href="#connect me" className="hover:text-blue-400 font-semibold transition">Connect Me</a>
-          <a href="#send message" className="bg-green-800 hover:text-blue-400 px-4 py-2 rounded-md font-semibold transition">Send Message</a>
-          <a href="#resume" className="bg-blue-900 hover:text-blue-400 px-4 py-2 rounded-md font-semibold transition">Resume</a>
+          <a href="#send message" className="bg-green-800 hover:text-blue-400 px-2 py-1 rounded-md font-semibold transition">Message</a>
+          <a href="/resume.pdf" className="bg-blue-900 hover:text-blue-400 px-2 py-1 rounded-md font-semibold transition" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
 
         {/* Mobile Menu Button */}
