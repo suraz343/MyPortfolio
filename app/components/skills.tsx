@@ -1,4 +1,6 @@
 import React from "react";
+import 'bootstrap-icons/font/bootstrap-icons.css';
+
 
 export default function Skills() {
   return (
@@ -40,7 +42,7 @@ export default function Skills() {
               { title: "Backend", skills: "Node.js, Express.js", icon: "server" },
               { title: "Database", skills: "MySQL", icon: "database" },
               { title: "Version Control", skills: "Git & GitHub", icon: "github" },
-              { title: "Framework", skills: "Bootstrap,Django,Next JS,Tailwind CSS", icon: "framework" }
+              { title: "Framework", skills: "Bootstrap, Django, Next JS, Tailwind CSS", icon: "front" }
             ].map((item, index) => (
               <div key={index} className="bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4 mx-auto w-full">
                 <i className={`bi bi-${item.icon} text-blue-400 text-3xl`}></i>
@@ -53,7 +55,6 @@ export default function Skills() {
           </div>
         </div>
       </div>
-
     </div>
   );
 }
