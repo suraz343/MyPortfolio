@@ -24,14 +24,18 @@ export default function HeroSection() {
       </div>
 
       
-      <div className="mt-12 md:mt-0 md:ml-16 flex justify-center w-full">
-        <div className="relative w-48 h-48 md:w-80 md:h-80 md:w-80 border-4 border-blue-500 rounded-3xl shadow-lg overflow-hidden bg-yellow-200">
+      <div className="mt-12 md:mt-0 md:ml-16 flex flex-col justify-center items-center w-full">
+        <div className="relative w-48 h-48 md:w-80 md:h-80 border-4 border-blue-500 rounded-3xl shadow-lg overflow-hidden bg-yellow-200">
           <img 
             src="/photo.png" 
             alt="Suraj Prajapati" 
             className="w-full h-full object-cover"
           />
+          
+      
+          
         </div>
+        <h3 className="text-blue-500 mt-4 text-center font-semibold md:text-2xl md:font-bold">App/Web Developer</h3>
       </div>
       
     </div>
