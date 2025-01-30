@@ -3,14 +3,14 @@ import React from "react";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-center min-h-screen pl-11 md:px-10 bg-gray-900 text-white">
+    <div className="flex flex-col sm:text-center md:flex-row items-center justify-center min-h-screen pl-11 md:px-10 bg-gray-900 text-white">
       
       {/* Left Side - Text Content */}
       <div className="text-center md:text-left max-w-2xl w-full">
         <h2 className="text-3xl md:text-5xl font-extrabold text-blue-400 mt-24 md:mt-32">
           HEY DEVELOPERS 👋
         </h2>
-        <p className="text-xl md:text-3xl text-gray-300 font-semibold mt-2">
+        <p className="text-xl md:text-3xl text-gray-200 font-semibold mt-2">
           This is me
         </p>
         <h1 className="text-4xl md:text-7xl font-bold mt-4 leading-tight">
