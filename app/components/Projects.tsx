@@ -1,7 +1,12 @@
 import React from "react";
 
 // ProjectCard Component (Accepts Props)
-const ProjectCard = (props) => {
+interface ProjectProps {
+    name: string;
+    description: string;
+    github: string
+  }
+  const ProjectCard: React.FC<ProjectProps> = (props) => {
   return (
     <div className="bg-gray-800 text-white p-10 m-6 rounded-3xl shadow-lg max-w-md w-full transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <h2 className="text-2xl font-bold text-blue-400 md:text-3xl">{props.name}</h2>
