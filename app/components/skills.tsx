@@ -32,27 +32,35 @@ export default function Skills() {
       {/* Technical Skills Section */}
       <div className="w-full md:w-1/2 flex justify-center">
         <div className="w-full max-w-md">
-          <h1 className="font-extrabold text-blue-400 text-3xl md:text-5xl text-center md:text-left">
-            Technical Skills
+          <h1 className="ml-6 font-extrabold text-blue-400 text-3xl md:text-5xl text-center md:text-left">
+            Tech Stacks
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
-            {[
-              { title: "Programming", skills: "C, Java, Python, JavaScript", icon: "code-slash" },
-              { title: "Frontend", skills: "HTML, CSS, JavaScript, React", icon: "layout-text-window" },
-              { title: "Backend", skills: "Node.js, Express.js", icon: "server" },
-              { title: "Database", skills: "MySQL", icon: "database" },
-              { title: "Version Control", skills: "Git & GitHub", icon: "github" },
-              { title: "Framework", skills: "Bootstrap, Django, Next JS, Tailwind CSS", icon: "front" }
-            ].map((item, index) => (
-              <div key={index} className="bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4 mx-auto w-full">
-                <i className={`bi bi-${item.icon} text-blue-400 text-3xl`}></i>
-                <div>
-                  <h3 className="text-white font-semibold text-lg">{item.title}</h3>
-                  <p className="text-gray-300 text-sm">{item.skills}</p>
-                </div>
-              </div>
-            ))}
-          </div>
+  {[
+    { title: "Programming", skills: "C, Java, Python, JavaScript", icon: "code-slash" },
+    { title: "Frontend", skills: "HTML, CSS, JavaScript, React", icon: "layout-text-window" },
+    { title: "Backend", skills: "Node.js, Express.js", icon: "server" },
+    { title: "Database", skills: "MySQL", icon: "database" },
+    { title: "Version Control", skills: "Git & GitHub", icon: "github" },
+    { title: "Framework", skills: "Bootstrap, Django, Next JS, Tailwind CSS", icon: "front" }
+  ].map((item, index) => (
+    <div key={index} className="bg-gray-800 p-4 rounded-xl shadow-md flex items-center gap-4 mx-auto w-full">
+      <div>
+        <h3 className="text-white font-semibold text-lg">
+        <i className={`bi bi-${item.icon} m-2 text-blue-400 text-3xl`}></i> 
+          {item.title}</h3>
+        <div className="flex flex-wrap gap-2 mt-2">
+          {item.skills.split(", ").map((skill, i) => (
+            <span key={i} className="bg-gray-700 text-gray-200 px-2 py-1 rounded-lg text-sm">
+              {skill}
+            </span>
+          ))}
+        </div>
+      </div>
+    </div>
+  ))}
+</div>
+
         </div>
       </div>
     </div>

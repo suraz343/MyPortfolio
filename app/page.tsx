@@ -4,6 +4,7 @@ import HeroSection from "./components/Hero";
 import Projects from "./components/Projects";
 import Skills from "./components/skills";
 import Education from "./components/Education";
+import Message from "./components/Message";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Education />
+      <Message />
     </main>
   )
 }
