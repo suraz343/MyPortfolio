@@ -3,7 +3,7 @@ import React from "react";
 export default function Message() {
   return (
     <div id="message" className="mt-10 text-white flex flex-col items-center md:mt-40 md:mb-20">
-      <h1 className="text-center font-extrabold text-3xl md:text-5xl text-blue-500 mb-8">
+      <h1 className="text-center font-extrabold text-3xl md:text-5xl text-blue-500">
         Get In Touch
       </h1>
       <div className="w-full max-w-lg p-8">
