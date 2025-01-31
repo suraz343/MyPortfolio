@@ -8,7 +8,7 @@ import Education from "./components/Education";
 
 export default function Home() {
   return (
-    <main className="min-h-screen bg-gray-900 dark:bg-gray-900">
+    <main className="max-w-full overflow-x-hidden bg-gray-900 dark:bg-gray-900">
       <NavBar />
       <HeroSection />
       <Projects />

@@ -53,8 +53,8 @@ export default function Projects() {
   ];
 
   return (
-    <div className="bg-gray-900 text-white flex flex-col mt-6 items-center px-6 md:px-16">
-      <h1 className="text-3xl md:text-5xl font-extrabold text-blue-400 text-center md:text-left mb-10">
+    <div className="bg-gray-900 text-white flex flex-col mt-10 items-center px-6 md:px-16">
+      <h1 className="text-3xl md:text-5xl font-extrabold text-blue-400 text-center md:text-left mb-3">
         My Projects
       </h1>
 

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col sm:text-center md:flex-row items-center justify-center min-h-screen pl-11 md:px-10 bg-gray-900 text-white">
+    <div className="flex flex-col sm:text-center md:flex-row items-center justify-center min-h-screen pl-11 md:px-10 bg-gray-900 text-white pr-6">
       
       {/* Left Side - Text Content */}
       <div className="text-center md:text-left max-w-2xl w-full">
