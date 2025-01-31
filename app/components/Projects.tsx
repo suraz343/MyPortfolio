@@ -8,7 +8,7 @@ interface ProjectProps {
   }
   const ProjectCard: React.FC<ProjectProps> = (props) => {
   return (
-    <div className=" bg-gray-800 text-white p-10 m-3 rounded-2xl shadow-lg max-w-md w-full transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className=" bg-gray-800 text-white p-10 m-6 rounded-2xl shadow-lg max-w-md w-full transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <h2 className="text-2xl font-bold text-blue-400 md:text-3xl">{props.name}</h2>
       <p className="text-gray-200 mt-3 md:text-lg">{props.description}</p>
       <a
@@ -53,7 +53,8 @@ export default function Projects() {
   ];
 
   return (
-    <div className="bg-gray-900 text-white flex flex-col mt-10 items-center px-6 md:px-16">
+    <div id="projects" className="pt-16 bg-gray-900 text-white flex flex-col mt-6 items-center px-6 md:px-16">
+      
       <h1 className="text-3xl md:text-5xl font-extrabold text-blue-400 text-center md:text-left mb-3">
         My Projects
       </h1>

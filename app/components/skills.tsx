@@ -4,7 +4,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css';
 
 export default function Skills() {
   return (
-    <div className="m-8 md:m-36 flex flex-col md:flex-row justify-center items-center gap-12">
+    <div id="skills" className="pt-32 m-8 md:m-36 flex flex-col md:flex-row justify-center items-center gap-12">
       
       {/* Work Experience Section */}
       <div className="w-full md:w-1/2 flex justify-center">

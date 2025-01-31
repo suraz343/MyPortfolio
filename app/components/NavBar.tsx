@@ -13,8 +13,8 @@ export default function NavBar() {
 
         {/* Desktop Menu */}
         <div className="hidden md:flex space-x-6">
-          <a href="#projects" className="hover:text-blue-400 font-semibold transition">Projects</a>
-          <a href="#about" className="hover:text-blue-400 font-semibold transition">About</a>
+          <Link href="#projects" scroll={true} className="hover:text-blue-400 font-semibold transition">Projects</Link>
+          <a href="#skills" className="hover:text-blue-400 font-semibold transition">Skills</a>
           <a href="#connect" className="hover:text-blue-400 font-semibold transition">Connect Me</a>
           <a href="#message" className="bg-green-800 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition">Message</a>
           <a href="/resume.pdf" className="bg-blue-900 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition" target="_blank" rel="noopener noreferrer">Resume</a>
