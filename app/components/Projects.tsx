@@ -12,7 +12,7 @@ interface ProjectProps {
 
 const ProjectCard: React.FC<ProjectProps> = (props) => {
   return (
-    <div className="bg-gray-800 text-white p-4 md:p-6 mr-4 rounded-2xl shadow-lg w-full max-w-2xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
+    <div className="bg-gray-800 text-white p-4 md:p-6 mr-4 rounded-2xl shadow-lg w-full max-w-xl transform transition duration-300 hover:scale-105 hover:shadow-2xl">
       <div className="w-full flex items-center justify-center">
         <Image 
           src={props.img} 
@@ -62,7 +62,7 @@ export default function Projects() {
       github: "https://github.com/suraz343/Drum_kit_Website",
     },
     {
-      img: "/mycourse.jpg",
+      img: "/mycourse1.jpg",
       name: "My Courses App",
       description: "A university management system app built with Kotlin to help students and faculty manage courses efficiently.",
       github: "https://github.com/suraz343/APP_My_Courses",
