@@ -15,7 +15,6 @@ export default function NavBar() {
         <div className="hidden md:flex space-x-6">
           <Link href="#projects" scroll={true} className="hover:text-blue-400 font-semibold transition">Projects</Link>
           <a href="#skills" className="hover:text-blue-400 font-semibold transition">Skills</a>
-          <a href="#connect" className="hover:text-blue-400 font-semibold transition">Connect Me</a>
           <a href="#message" className="bg-green-800 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition">Message</a>
           <a href="/resume.pdf" className="bg-blue-900 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition" target="_blank" rel="noopener noreferrer">Resume</a>
         </div>
@@ -30,7 +29,6 @@ export default function NavBar() {
       <div className={`absolute top-full left-0 w-full bg-gray-800 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
         <a href="#projects" className="block text-center py-2 hover:text-blue-400 transition">Projects</a>
         <a href="#about" className="block text-center py-2 hover:text-blue-400 transition">About</a>
-        <a href="#connect" className="block text-center py-2 hover:text-blue-400 transition">Connect Me</a>
         <a href="#message" className="block text-center py-2 bg-green-800 rounded-md font-semibold hover:text-blue-400 transition">Send Message</a>
         <a href="/resume.pdf" className="block text-center py-2 bg-blue-900 text-white rounded-md font-semibold hover:text-blue-400 transition" target="_blank" rel="noopener noreferrer">Resume</a>
       </div>
