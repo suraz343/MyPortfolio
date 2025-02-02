@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
-import Link from 'next/link';
+import Link from "next/link";
+import { Menu, X, Send, FileText } from "lucide-react";
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,28 +10,48 @@ export default function NavBar() {
     <nav className="bg-gray-900 text-white fixed top-0 left-0 w-full z-50 shadow-lg">
       <div className="container mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <Link href="/" className="text-2xl font-bold text-blue-400">Suraz343</Link>
+        <Link href="/" className="text-2xl font-bold text-blue-400">
+          Suraz343
+        </Link>
 
-        {/* Desktop Menu */}
+        
         <div className="hidden md:flex space-x-6">
-          <Link href="#projects" scroll={true} className="hover:text-blue-400 font-semibold transition">Projects</Link>
+          <Link href="#projects" className="hover:text-blue-400 font-semibold transition">
+            Projects
+          </Link>
           <a href="#skills" className="hover:text-blue-400 font-semibold transition">Skills</a>
-          <a href="#message" className="bg-green-800 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition">Message</a>
-          <a href="/resume.pdf" className="bg-blue-900 hover:text-blue-400 px-3 py-1 rounded-md font-semibold transition" target="_blank" rel="noopener noreferrer">Resume</a>
+          <a href="#message" className="flex items-center gap-1 bg-green-700 px-3 py-1 rounded-md font-semibold hover:bg-green-800 transition">
+            <Send size={16} /> Message
+          </a>
+          <a href="/resume.pdf" className="flex items-center gap-1 bg-blue-900 px-3 py-1 rounded-md font-semibold hover:bg-blue-950 transition" target="_blank" rel="noopener noreferrer">
+            <FileText size={16} /> Resume
+          </a>
         </div>
 
         {/* Mobile Menu Button */}
         <button className="md:hidden focus:outline-none" onClick={() => setIsOpen(!isOpen)}>
-          <span className="text-2xl">{isOpen ? "✖" : "☰"}</span>
+          {isOpen ? <X size={28} /> : <Menu size={28} />}
         </button>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`absolute top-full left-0 w-full bg-gray-800 transition-all duration-300 ${isOpen ? "block" : "hidden"}`}>
-        <a href="#projects" className="block text-center py-2 hover:text-blue-400 transition">Projects</a>
-        <a href="#about" className="block text-center py-2 hover:text-blue-400 transition">About</a>
-        <a href="#message" className="block text-center py-2 bg-green-800 rounded-md font-semibold hover:text-blue-400 transition">Send Message</a>
-        <a href="/resume.pdf" className="block text-center py-2 bg-blue-900 text-white rounded-md font-semibold hover:text-blue-400 transition" target="_blank" rel="noopener noreferrer">Resume</a>
+      {/* Mobile Full-Screen Menu */}
+      <div className={`fixed inset-0 bg-black bg-opacity-90 flex flex-col items-center justify-center space-y-6 text-lg transition-transform duration-300 ${isOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+        <button className="absolute top-5 right-6 text-white text-3xl" onClick={() => setIsOpen(false)}>
+          <X size={36} />
+        </button>
+
+        <Link href="#projects" className="text-white text-xl font-semibold hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>
+          Projects
+        </Link>
+        <a href="#skills" className="text-white text-xl font-semibold hover:text-blue-400 transition" onClick={() => setIsOpen(false)}>
+          Skills
+        </a>
+        <a href="#message" className="flex items-center gap-2 bg-green-700 px-6 py-3 rounded-lg text-white text-lg font-semibold hover:bg-green-800 transition" onClick={() => setIsOpen(false)}>
+          <Send size={20} /> Message
+        </a>
+        <a href="/resume.pdf" className="flex items-center gap-2 bg-blue-900 px-6 py-3 rounded-lg text-white text-lg font-semibold hover:bg-blue-950 transition" target="_blank" rel="noopener noreferrer" onClick={() => setIsOpen(false)}>
+          <FileText size={20} /> Resume
+        </a>
       </div>
     </nav>
   );

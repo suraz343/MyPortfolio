@@ -56,7 +56,6 @@ export default function HeroSection() {
     <i className="m-6 bi bi-instagram  text-blue-400 hover:text-blue-700 transition"></i></a>
     <a href="https://www.facebook.com/suraj.prajapati.3597789" target="_blank" rel="noopener noreferrer">
     <i className="m-6 bi bi-facebook  text-blue-400 hover:text-blue-700 transition"></i></a>
-
     </div>
       </div>
     </div>
