@@ -56,10 +56,10 @@ export default function Projects() {
       github: "https://github.com/suraz343/Expense-Manager",
     },
     {
-      img: "/drumkit.jpg",
-      name: "DrumKit Website",
-      description: "An interactive web application that allows users to play drum sounds through keyboard presses or mouse clicks.",
-      github: "https://github.com/suraz343/Drum_kit_Website",
+      img: "/grance-beauty-zone.jpg",
+      name: "Grance Beauty Zone",
+      description: "It's a modern web platform designed for booking beauty services and exploring beauty products. It provides users with an easy way to schedule appointments, ensuring a seamless experience. Built with Next.js, TypeScript, and Tailwind CSS, the platform focuses on a clean and responsive UI. 🚀✨",
+      github: "https://github.com/suraz343/Grance-Beauty-Zone",
     },
     {
       img: "/mycourse1.jpg",

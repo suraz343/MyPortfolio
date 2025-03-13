@@ -33,7 +33,7 @@ export default function Message() {
             Send Message
           </button>
         </form>
-        <p className="text-center font-semibold mt-20 mb-0 text-lg text-blue-500">Designed with ❤️ by suraz343</p>
+        <p className="text-center font-semibold mt-32 mb-0 text-lg text-blue-500">Designed with ❤️ by suraz343</p>
         <p className="text-white text-center mt-1 text-sm"><i className="bi bi-c-circle"> copyright suraz343 2025</i></p>
       </div>
     </div>
