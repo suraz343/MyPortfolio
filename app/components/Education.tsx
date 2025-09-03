@@ -19,8 +19,8 @@ export default function Education() {
                         <div className="m-2">
                         <h2 className="text-xl">{item.name}</h2>
                         <div className="ml-2">
-                        <p className="text-blue-500 text-lg">{item.course}</p>
-                        <p className="text-sm font-bold">Percentage: {item.percent}</p>
+                        <p className="text-yellow-500 text-lg">{item.course}</p>
+                        <p className="text-sm text-green-500 font-bold">Percentage: {item.percent}</p>
                         <p className="text-sm">{item.period}</p>
                         </div>
                         </div>

@@ -17,14 +17,18 @@ export default function Skills() {
               <i className="bi bi-briefcase-fill text-blue-400 text-4xl"></i>
               <div>
                 <h3 className="text-white font-semibold text-2xl">InnovNepal (StartUp)</h3>
-                <p className="text-blue-400 text-lg">Web Developer</p>
+                <p className="text-blue-400 text-lg">Web Developer & Core Team Member</p>
               </div>
             </div>
-            <ul className="list-disc pl-5 text-gray-300 text-md space-y-2">
-              <li>Built and managed websites using WordPress, ensuring smooth functionality and user experience.</li>
-              <li>Customized themes and plugins to meet business requirements.</li>
-              <li>Assisted in website maintenance, updates, and performance optimization.</li>
-            </ul>
+   <ul className="list-disc pl-5 text-gray-300 text-md space-y-2">
+  <li>Developed and maintained the InnovNepal website, ensuring responsive design and smooth user experience.</li>
+  <li>Led and supported IoT-based educational projects, including smart agriculture and environmental monitoring solutions.</li>
+  <li>Conducted hands-on IoT workshops in schools and colleges to train students on sensors and microcontrollers.</li>
+  <li>Collaborated on designing and deploying IoT hardware kits to make technology learning more accessible.</li>
+  <li>Provided technical support and guidance to students and institutions using InnovNepal’s products.</li>
+</ul>
+
+
           </div>
         </div>
       </div>
@@ -37,10 +41,10 @@ export default function Skills() {
           </h1>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
   {[
-    { title: "Programming", skills: "C, Java, Python, JavaScript", icon: "code-slash" },
-    { title: "Frontend", skills: "HTML, CSS, JavaScript, React", icon: "layout-text-window" },
-    { title: "Backend", skills: "Node.js, Express.js", icon: "server" },
-    { title: "Database", skills: "MySQL", icon: "database" },
+    { title: "Programming", skills: "C, Java, Python, JavaScript, TypeScript", icon: "code-slash" },
+    { title: "Frontend", skills: "HTML, CSS, JavaScript, React, Next Js", icon: "layout-text-window" },
+    { title: "Backend", skills: "Node.js, Express.js, Django", icon: "server" },
+    { title: "Database", skills: "MySQL, Postgres, MongoDB", icon: "database" },
     { title: "Version Control", skills: "Git & GitHub", icon: "github" },
     { title: "Framework", skills: "Bootstrap, Django, Next JS, Tailwind CSS", icon: "front" }
   ].map((item, index) => (
