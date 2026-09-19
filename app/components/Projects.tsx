@@ -49,6 +49,52 @@ const ProjectCard: React.FC<ProjectProps> = (props) => {
 
 export default function Projects() {
   const projectList = [
+    // --- Client work at Smarten Technologies (Odoo) ---
+    // TODO: replace img paths below with real screenshots placed in /public,
+    // and swap the "#" links for the live site URLs.
+    {
+      img: "/aquaworld.jpg",
+      name: "Aqua World",
+      description:
+        "Full custom Odoo website for a water delivery company - homepage, product & subscription pages, blog, Google sign-in, and Leaflet-based location capture on the quote form.",
+      github: "#",
+    },
+    {
+      img: "/aviyan-travel.jpg",
+      name: "Aviyan Travel Tour Portal",
+      description:
+        "Custom Odoo travel booking platform covering flights, hotels, tours, car rentals, and packages, with dynamic hero booking tabs and a controller-driven tour detail page.",
+      github: "#",
+    },
+    {
+      img: "/kundalini-durbar-banquet.jpg",
+      name: "Kundalini Durbar Banquet",
+      description:
+        "Complete Odoo website for a banquet & events venue, with a backend-driven hall detail page, an events listing with filters, and a booking form wired into CRM.",
+      github: "#",
+    },
+    {
+      img: "/ujyaalo-nepal-party.jpg",
+      name: "Ujyaalo Nepal Party",
+      description:
+        "Full Odoo 18 website with a dedicated backend module for managing news, members, and media, powering dynamic committee, department, and media-center snippets.",
+      github: "#",
+    },
+    {
+      img: "/ultima-lifestyle.jpg",
+      name: "Ultima Lifestyle",
+      description:
+        "Odoo 19 e-commerce build with a dynamic mega menu, a backend-driven FAQ system, and reusable React/Next.js + Tailwind components for the storefront.",
+      github: "#",
+    },
+    {
+      img: "/reet-cosmetics.jpg",
+      name: "Reet Cosmetics",
+      description:
+        "End-to-end Odoo e-commerce build including custom login with Google OAuth, cart, checkout, and order-complete flow, plus a fully populated product catalog.",
+      github: "#",
+    },
+    // --- Personal projects ---
     {
       img: "/innovnepal.jpeg",
       name: "InnovNepal Website",

@@ -12,6 +12,27 @@ export default function Skills() {
           <h1 className="font-extrabold text-blue-400 text-3xl md:text-5xl text-center md:text-left">
             Work Experience
           </h1>
+
+          {/* Smarten Technologies */}
+          <div className="bg-gray-800 p-6 rounded-xl shadow-md mt-6 flex flex-col gap-4">
+            <div className="flex items-center gap-4">
+              <i className="bi bi-briefcase-fill text-blue-400 text-4xl"></i>
+              <div>
+                <h3 className="text-white font-semibold text-2xl">Smarten Technologies Pvt Ltd</h3>
+                <p className="text-blue-400 text-lg">Full Stack & Odoo Developer</p>
+                <p className="text-gray-400 text-sm">March 2026 - Present</p>
+              </div>
+            </div>
+            <ul className="list-disc pl-5 text-gray-300 text-md space-y-2">
+              <li>Delivered 12+ full custom Odoo website builds end-to-end for clients across e-commerce, hospitality, travel, and political sectors, including Purna Water, Aqua World, Reet Cosmetics, Kundalini Durbar Banquet, Ujyaalo Nepal Party, and Ultima Lifestyle.</li>
+              <li>Built dynamic, backend-driven Odoo snippets, controllers, and QWeb templates, plus a custom portal_dashboard_theme module extending Odoo&apos;s CustomerPortal for a redesigned account dashboard.</li>
+              <li>Implemented Google OAuth login, CRM/booking integrations, Leaflet-based location maps, and Nepal-specific SEO optimization across multiple client sites.</li>
+              <li>Logged 900+ hours of client delivery and ran the full Git/GitHub PR review-and-merge workflow across teams.</li>
+              <li>Upskilled in React, Next.js, and Tailwind CSS, building reusable frontend components for the Ultima Lifestyle project.</li>
+            </ul>
+          </div>
+
+          {/* InnovNepal */}
           <div className="bg-gray-800 p-6 rounded-xl shadow-md mt-6 flex flex-col gap-4">
             <div className="flex items-center gap-4">
               <i className="bi bi-briefcase-fill text-blue-400 text-4xl"></i>
@@ -20,15 +41,13 @@ export default function Skills() {
                 <p className="text-blue-400 text-lg">Web Developer & Core Team Member</p>
               </div>
             </div>
-   <ul className="list-disc pl-5 text-gray-300 text-md space-y-2">
-  <li>Developed and maintained the InnovNepal website, ensuring responsive design and smooth user experience.</li>
-  <li>Led and supported IoT-based educational projects, including smart agriculture and environmental monitoring solutions.</li>
-  <li>Conducted hands-on IoT workshops in schools and colleges to train students on sensors and microcontrollers.</li>
-  <li>Collaborated on designing and deploying IoT hardware kits to make technology learning more accessible.</li>
-  <li>Provided technical support and guidance to students and institutions using InnovNepal’s products.</li>
-</ul>
-
-
+            <ul className="list-disc pl-5 text-gray-300 text-md space-y-2">
+              <li>Developed and maintained the InnovNepal website, ensuring responsive design and smooth user experience.</li>
+              <li>Led and supported IoT-based educational projects, including smart agriculture and environmental monitoring solutions.</li>
+              <li>Conducted hands-on IoT workshops in schools and colleges to train students on sensors and microcontrollers.</li>
+              <li>Collaborated on designing and deploying IoT hardware kits to make technology learning more accessible.</li>
+              <li>Provided technical support and guidance to students and institutions using InnovNepal&apos;s products.</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -44,6 +63,8 @@ export default function Skills() {
     { title: "Programming", skills: "C, Java, Python, JavaScript, TypeScript", icon: "code-slash" },
     { title: "Frontend", skills: "HTML, CSS, JavaScript, React, Next Js", icon: "layout-text-window" },
     { title: "Backend", skills: "Node.js, Express.js, Django", icon: "server" },
+    { title: "Odoo Development", skills: "Odoo 17/18/19, QWeb, ORM, Python Controllers", icon: "grid-3x3-gap-fill" },
+    { title: "Styling", skills: "SCSS, Bootstrap, Tailwind CSS", icon: "palette-fill" },
     { title: "Database", skills: "MySQL, Postgres, MongoDB", icon: "database" },
     { title: "Version Control", skills: "Git & GitHub", icon: "github" },
     { title: "Framework", skills: "Bootstrap, Django, Next JS, Tailwind CSS", icon: "front" }
